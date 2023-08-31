@@ -19,8 +19,8 @@ handleTestItem = (id) => {
     }
   render() {
     return (
-        <div>        
-        <Glass_BackG/>
+        <div style={{background:'url("./glassesImage/background.jpg")',backgroundSize:'cover',backgroundRepeat:'no-repeat',backgroundPosition:'center', width: '100%', height: '100%',position:'relative'}}>      
+        <Glass_BackG />  
         <Glass_Text />
         <div className='container'>
             <div className='row'>
