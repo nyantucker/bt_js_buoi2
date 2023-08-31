@@ -12,13 +12,11 @@ export default class Glass_Layout extends Component {
         data: data,
         dataTest:data[0]
     }
-
 handleTestItem = (id) => {
    this.setState({
     dataTest: data[id-1]
    })
     }
-
   render() {
     return (
         <div>        
@@ -30,16 +28,9 @@ handleTestItem = (id) => {
                 <div style={{width: '400px', height: '600px'}} className='col-6 p-5'><Glass_Img/></div>
             </div>   
         </div>
-      
-
-
-
-
-            <div className='container' style={{background:'white', height:'300px'}}>
+            <div className='container d-flex justify-content-center align-items-center' style={{boxShadow:`rgba(99, 99, 99, 0.2) 0px 2px 8px 0px`}}>
             <Glass_Product data={this.state.data} handleTestItem={this.handleTestItem}/>
             </div>
-
-      
         </div>
 
     )

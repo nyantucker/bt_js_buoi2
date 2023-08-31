@@ -9,7 +9,7 @@ export default class Glass_Product extends Component {
   }
   render() {
     return (
-      <div className='row'  >
+      <div className='row m-2' style={{height:'100%'}} >
         {this.renderProducts()}
       </div>
     )
